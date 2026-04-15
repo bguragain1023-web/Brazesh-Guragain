@@ -1,9 +1,9 @@
 import React from "react";
-import timeImage from "../assets/t-tracker.jpg";
-import contactList from "../assets/c-list.jpg";
-import prank from "../assets/prank.jpg";
-import port from "../assets/port.jpg";
-import weather from "../assets/weather.jpg";
+import timeImage from "../assets/t-tracker.JPG";
+import contactList from "../assets/c-list.JPG";
+import prank from "../assets/prank.JPG";
+import port from "../assets/port.JPG";
+import weather from "../assets/weather.JPG";
 import { Title } from "./Title";
 import { Card } from "./Card";
 
