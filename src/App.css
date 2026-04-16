@@ -18,6 +18,12 @@
   font-weight: 300;
   font-style: italic;
 }
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -525,10 +531,12 @@ footer {
     padding-left: 2rem;
   }
 
-  #hamburger:checked ~ .menu {
+  /* #hamburger:checked ~ .menu {
+    left: calc(100vw - 250px);
+  } */
+  .slide {
     left: calc(100vw - 250px);
   }
-
   /* Hero  */
 
   .hero-terminal {

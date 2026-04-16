@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const Goup = () => {
+  const [scrollYPosition, setScrollYPosition] = useState(0);
+
+  const handleOnScrollY = () => {
+    setScrollYPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleOnScrollY);
+
+    return () => {
+      window.removeEventListener("scroll", handleOnScrollY);
+    };
+  });
+
   return (
-    <a href="#hero">
-      <div className="goup flex-center">
-        <i className="fa-solid fa-angle-up"></i>
-      </div>
-    </a>
+    <>
+      {scrollYPosition > 800 && (
+        <a href="#hero">
+          <div className="goup flex-center">
+            <i className="fa-solid fa-angle-up"></i>
+          </div>
+        </a>
+      )}
+    </>
   );
 };
