@@ -21,6 +21,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -52,6 +53,7 @@ a {
 
 nav {
   box-shadow: var(--shadow);
+  padding: 1rem 0;
   position: sticky;
   top: 0px;
   background-color: var(--color-dark);
@@ -61,26 +63,43 @@ nav {
 nav .navbar {
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5 0;
 }
 .name {
-  position: relative;
-  font-size: 1.3rem;
+  justify-content: space-between;
+  gap: 5px;
 }
-.name :first-child {
+.brazz {
   font-size: 2rem;
   font-family: "Jersey 20", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-right: 1rem;
 }
-.line::before {
+.liness {
+  background: var(--color-secondary);
+  height: 50px;
+  width: 4px;
+}
+
+.nav-job-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+/* .line::before {
   content: "";
   background: var(--color-secondary);
   width: 4px;
   height: 100%;
   position: absolute;
   left: 35%;
+} */
+
+.navigation {
+  list-style: none;
+  font-weight: bold;
+  gap: 2rem;
 }
 
 .navigation li:hover {
@@ -287,6 +306,7 @@ nav .navbar {
   opacity: 0.5;
 }
 .banner1 {
+  flex-direction: column;
   padding: 2rem;
   align-items: center;
   margin-left: 10px;
@@ -441,10 +461,13 @@ footer {
   right: 50px;
   bottom: 50px;
 }
-#hamburger {
-  display: none;
+#hamburger .hide-box {
+  display: none !important;
 }
 .hamburger-icon {
+  display: none;
+}
+[for="hamburger"] {
   display: none;
 }
 
@@ -471,40 +494,153 @@ footer {
 /* media query */
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Navbar */
+
   [for="hamburger"] {
     display: block;
     cursor: pointer;
-    z-index: 1005;
   }
 
   .menu {
-    position: absolute;
-
-    width: 150px;
-    height: 60vh;
-    top: 4rem;
-    left: 120%; /* Start off-screen */
+    position: fixed;
+    background: var(--color-dark);
+    width: 250px;
+    height: 100vh;
+    top: 5rem;
+    left: 100vw;
     box-shadow: var(--shadow);
-    transition: left 0.5s ease-in-out;
-    padding: 1rem;
-    border-radius: 10px;
+    transition: all 0.5s;
   }
   .navigation {
-    display: flex;
     flex-direction: column;
-    padding-top: 2rem;
     font-size: 1.3rem;
-    list-style: none;
-    padding-left: 0;
   }
 
   .navigation li {
     line-height: 2.5rem;
-    width: 100%;
-    text-align: center;
+    padding-left: 2rem;
   }
 
   #hamburger:checked ~ .menu {
-    left: calc(120% - 155px);
+    left: calc(100vw - 250px);
+  }
+
+  /* Hero  */
+
+  .hero-terminal {
+    padding: 1rem;
+  }
+
+  .full-name {
+    font-size: 2.5rem;
+  }
+
+  .avai {
+    font-size: 1.5rem;
+  }
+
+  .btn-section {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-section a {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Banner */
+
+  .banner {
+    border: 1px solid var(--color-secondary);
+    gap: 1rem;
+    padding: 12px;
+    margin: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .achievement {
+    color: var(--name-color);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .banner1 span {
+    color: var(--color-secondary);
+    font-size: 0.5rem;
+    opacity: 0.5;
+  }
+  .banner1 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  /* skills section */
+  .skill-box {
+    padding: 12px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  .skill-content {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill-content i {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--name-color);
+  }
+  .skill-content p {
+    color: var(--color-secondary);
+    font-size: 1rem;
+  }
+
+  /* About me Section */
+
+  .about-name {
+    color: aquamarine;
+    font-size: 2rem;
+  }
+  .bio p {
+    color: var(--text-color);
+    line-height: 2.2;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+  }
+  .image-box img {
+    max-width: 200px;
+    height: auto;
+  }
+  /*  Contact me  */
+  .firstline {
+    color: var(--color-secondary);
+    font-size: 2rem;
+  }
+  .secondline {
+    color: var(--name-color);
+    font-size: 2.5rem;
+  }
+  .contact-in {
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+  }
+  .contact {
+    font-size: 25px;
+    gap: 1rem;
+    color: var(--color-secondary);
   }
 }

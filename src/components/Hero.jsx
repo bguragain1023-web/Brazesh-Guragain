@@ -3,7 +3,7 @@ import React from "react";
 export const Hero = () => {
   return (
     <div
-      className=" hero-terminal d-flex flex-column flex-md-row  gap-2 justify-content-between align-items-center"
+      className=" hero-terminal d-flex flex-column flex-md-row  gap-3 justify-content-between align-items-center"
       id="hero"
     >
       <div className="info">
@@ -25,7 +25,7 @@ export const Hero = () => {
           <a href="#projects">view project</a>
           <a href="#contact">contact me </a>
           <a href="/resume.docx" download>
-            <i class="fa-solid fa-download"></i>
+            <i className="fa-solid fa-download"></i>
             Download Resume
           </a>
         </div>

@@ -12,12 +12,10 @@ import { Goup } from "./Goup";
 function App() {
   return (
     <>
-      <input type="checkbox" id="dark" />
       <div className="wrapper">
         <Navbar />
         <Hero />
         <Banner />
-
         <Skills />
         <Projects />
         <About />

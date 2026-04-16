@@ -2,19 +2,20 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <nav className="py-3">
-      <div className="container d-flex justify-content-between align-items-center position-sticky">
-        <div className="name d-flex flex-md-row gap-md-2">
-          <div>Brazesh</div>
-          <div className="line">Full Stack Developer</div>
+    <nav>
+      <div className=" navbar container d-flex ">
+        <div className="name d-flex ">
+          <div className="brazz">Brazesh</div>
+          <div className="liness"></div>
+          <div className="nav-job-title">Full Stack Developer</div>
         </div>
-        <input type="checkbox" id="hamburger" />
+        <input className="hide-box" type="checkbox" id="hamburger" />
         <label htmlFor="hamburger" className="hamburger-icon">
           <i className="fa-solid fa-bars"></i>
         </label>
 
         <div className="menu">
-          <ul className="d-flex gap-3 fw-bold list-unstyled navigation">
+          <ul className="d-flex  navigation">
             <li>
               <a href="#hero">Home</a>
             </li>

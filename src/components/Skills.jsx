@@ -3,7 +3,7 @@ import { Title } from "./Title";
 
 export const Skills = () => {
   return (
-    <section className=" container mt-5 pt-5" id="skills">
+    <section className=" mt-5 pt-5" id="skills">
       <Title title="Skills" />
 
       <div className="skill-content mt-5 d-flex  ">
