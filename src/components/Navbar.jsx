@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [slideMenu, setSlideMenu] = useState(false);
   return (
     <nav>
       <div className=" navbar container d-flex ">
@@ -10,12 +12,19 @@ export const Navbar = () => {
           <div className="nav-job-title">Full Stack Developer</div>
         </div>
         <input className="hide-box" type="checkbox" id="hamburger" />
-        <label htmlFor="hamburger" className="hamburger-icon">
+        <label
+          htmlFor="hamburger"
+          className="hamburger-icon"
+          onClick={() => setSlideMenu(!slideMenu)}
+        >
           <i className="fa-solid fa-bars"></i>
         </label>
 
-        <div className="menu">
-          <ul className="d-flex  navigation">
+        <div className={slideMenu ? "menu slide" : "menu"}>
+          <ul
+            className="d-flex  navigation"
+            onClick={() => setSlideMenu(!slideMenu)}
+          >
             <li>
               <a href="#hero">Home</a>
             </li>

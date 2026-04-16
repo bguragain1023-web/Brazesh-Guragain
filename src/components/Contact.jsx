@@ -8,10 +8,8 @@ export const Contact = () => {
 
       <div className="contact-container m-5 p-3">
         <div className="motiv d-flex flex-column justify-content-center align-items-center">
-          <div className="firstline playwrite-ie-contactfont">LET's BUILD</div>
-          <div className="secondline playwrite-ie-contactfont">
-            SOMETHING GREAT
-          </div>
+          <div className="firstline space-mono-bold ">LET's BUILD</div>
+          <div className="secondline space-mono-bold ">SOMETHING GREAT</div>
         </div>
 
         <div className="contact-in mt-5 d-flex align-items-center justify-content-center">
@@ -28,10 +26,10 @@ export const Contact = () => {
             <i className="fa-brands fa-square-github"></i>
           </a>
           <a href="mailto:b.guragain1023@gmail.com">
-            <i className="fa-solid fa-paper-plane"></i>
+            <i className="fa-solid fa-envelope"></i>
           </a>
           <a href="tel:+61422429512">
-            <i className="fa-solid fa-mobile"></i>
+            <i className="fa-solid fa-phone"></i>
           </a>
         </div>
       </div>
