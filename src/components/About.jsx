@@ -1,6 +1,7 @@
 import React from "react";
 import myPic from "../assets/me.png";
 import { Title } from "./Title";
+import { Layout } from "./Layout";
 
 export const About = () => {
   return (

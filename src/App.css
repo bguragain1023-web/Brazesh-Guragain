@@ -36,6 +36,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+.main-body {
+  min-height: 70vh;
+}
 
 a {
   text-decoration: none;

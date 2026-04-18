@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [slideMenu, setSlideMenu] = useState(false);
@@ -23,22 +24,22 @@ export const Navbar = () => {
         <div className={slideMenu ? "menu slide" : "menu"}>
           <ul
             className="d-flex  navigation"
-            onClick={() => setSlideMenu(!slideMenu)}
+            onCLinkick={() => setSlideMenu(slideMenu)}
           >
             <li>
-              <a href="#hero">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Project</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#about">About me</a>
+              <Link to="/about">About me</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
