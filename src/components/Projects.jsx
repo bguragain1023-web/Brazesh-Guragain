@@ -4,6 +4,7 @@ import contactList from "../assets/c-list.JPG";
 import prank from "../assets/prank.JPG";
 import port from "../assets/port.JPG";
 import weather from "../assets/weather.JPG";
+import movie from "../assets/movie.JPG";
 import { Title } from "./Title";
 import { Card } from "./Card";
 
@@ -16,7 +17,7 @@ export const Projects = () => {
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web",
+      github: "https://github.com/bguragain1023-web/Time-Tracker-React",
       goLive: "https://time-tracker-react-liart.vercel.app",
     },
 
@@ -26,7 +27,7 @@ export const Projects = () => {
       toolOne: "HTML ",
       toolTwo: "CSS",
       toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web",
+      github: "https://github.com/bguragain1023-web/Contact-list",
       goLive: "https://https://vercel.com/bguragain1023-webs-projects",
     },
 
@@ -37,7 +38,7 @@ export const Projects = () => {
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web",
+      github: "https://github.com/bguragain1023-web/React-prank-calculator",
       goLive:
         "https://reactprankcalculatortest-axt0yuk00-bguragain1023-webs-projects.vercel.app",
     },
@@ -56,12 +57,24 @@ export const Projects = () => {
     {
       image: port,
       title: "Portfolio",
-      desc: " A fully working calculator with unexpected behaviour that catches users off-guard by adding random number 30% of the time .",
+      desc: "Personal developer portfolio built with React. Designed and built from scratch with a fully responsive layout, smooth animations, and a hamburger navigation menu for small screens. Showcases my projects, skills, and background — with a downloadable resume and direct contact options.",
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web",
-      goLive: "https://vercel.com/bguragain1023-webs-projects",
+      github: "https://github.com/bguragain1023-web/Brazesh-Guragain",
+      goLive: "https://www.brazeshguragain.com/",
+    },
+
+    {
+      image: movie,
+      title: "Movie World",
+      desc: "A React movie discovery app powered by the OMDB API. Loads a random movie on launch, lets you search any title, and categorize movies as Drama or Action into a personal watchlist. Features dynamic poster backgrounds, category filtering, and local storage persistence so your list survives page refreshes.",
+      toolOne: "React ",
+      toolTwo: "CSS",
+      toolThree: "Javascript",
+      github: "https://github.com/bguragain1023-web/Movie-World",
+      goLive:
+        "https://movie-world-git-main-bguragain1023-webs-projects.vercel.app/",
     },
   ];
   return (

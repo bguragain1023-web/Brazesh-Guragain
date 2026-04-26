@@ -12,11 +12,18 @@ export const About = () => {
           <span className="about-name fira-code-namefont">
             Brazesh Guragain
           </span>
+
           <p>
-            Hey — I'm Brazesh. I hold a Master of Technology in Software
-            Engineering from Federation University and I'm currently deep in a
-            full stack bootcamp building real things with React, Node.js, and
-            MongoDB.
+            Hey — I'm Brazesh. I build fast, functional web apps using React,
+            JavaScript, and CSS — with Node.js, MongoDB and AI integration in
+            progress. I've shipped 5+ projects including API-driven apps,
+            interactive React tools, and a fully responsive portfolio — and I'm
+            not stopping there.
+          </p>
+          <p>
+            I hold a Master of Technology in Software Engineering from
+            Federation University and I'm currently deep in a full stack
+            bootcamp building real things end to end.
           </p>
 
           <p>
@@ -25,10 +32,7 @@ export const About = () => {
             pressure, and actually care about people. Skills that matter just as
             much in a dev team.
           </p>
-          <p>
-            Based in Hobart, Tasmania — actively looking for junior dev
-            opportunities.
-          </p>
+          <p>Based in Hobart, Tasmania — open to new opportunities.</p>
 
           <div className="hobbies d-flex flex-wrap gap-4">
             <span className="hobbies-icon">

@@ -7,7 +7,7 @@ export const Hero = () => {
       id="hero"
     >
       <div className="info">
-        <span className="avai">//Available for work</span>
+        <span className="avai">// Open To Network</span>
 
         <div className="full-name fira-code-namefont d-flex flex-column">
           <span>Brazesh</span>
@@ -15,16 +15,17 @@ export const Hero = () => {
         </div>
 
         <br />
-        <span className="job-title typing ">Full Stack Developer</span>
+        <span className="job-title typing ">Frontend Developer</span>
         <p className="desc">
-          I build fast, functional web apps from frontend to backend. Currently
-          levelling up with Node.js, MongoDB, and AI integration — turning
-          caffeine and curiosity into real products.
+          I build fast, functional web apps from frontend to backend - with 5+
+          projects already shipped including API integration, real-time data
+          apps, and React tools. Currently levelling up with Node.js, MongoDB,
+          and AI integration — turning caffeine and curiosity into real
+          products.
         </p>
         <div className="btn-section mt-5">
-          <a href="#projects">view project</a>
           <a href="#contact">contact me </a>
-          <a href="/resume.docx" download>
+          <a href="/brazesh_resume.pdf" download>
             <i className="fa-solid fa-download"></i>
             Download Resume
           </a>
@@ -71,7 +72,7 @@ export const Hero = () => {
               <span className="v-name">"skills"</span>
               <span>:</span>
               <span className="value">
-                ["HTML" , "CSS", "javaScrit", "React"]
+                ["HTML" , "CSS", "javaScript", "React"]
               </span>
               ,
               <br />

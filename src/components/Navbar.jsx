@@ -7,14 +7,14 @@ export const Navbar = () => {
     <nav>
       <div className=" navbar container d-flex ">
         <div className="name d-flex ">
-          <div className="brazz">Brazesh</div>
+          <div className="brazz p-2">Brazesh</div>
           <div className="liness"></div>
-          <div className="nav-job-title">Full Stack Developer</div>
+          <div className="nav-job-title">Frontend Developer</div>
         </div>
         <input className="hide-box" type="checkbox" id="hamburger" />
         <label
           htmlFor="hamburger"
-          className="hamburger-icon"
+          className="hamburger-icon p-2"
           onClick={() => setSlideMenu(!slideMenu)}
         >
           <i className="fa-solid fa-bars"></i>

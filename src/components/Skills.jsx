@@ -6,7 +6,7 @@ export const Skills = () => {
     <section className=" mt-5 pt-5" id="skills">
       <Title title="Skills" />
 
-      <div className="skill-content mt-5 d-flex  ">
+      <div className="skill-content mt-5 d-flex  container ">
         <div className="skill-box">
           <i className="fa-brands fa-html5"></i>
           <p>HTML</p>
