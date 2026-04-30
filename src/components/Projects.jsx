@@ -28,7 +28,7 @@ export const Projects = () => {
       toolTwo: "CSS",
       toolThree: "Javascript",
       github: "https://github.com/bguragain1023-web/Contact-list",
-      goLive: "https://https://vercel.com/bguragain1023-webs-projects",
+      goLive: "https://contact-list-seven.vercel.app/",
     },
 
     {
@@ -46,12 +46,12 @@ export const Projects = () => {
     {
       image: weather,
       title: "Weather App",
-      desc: "  Real-time weather dashboard pulling live data via API. Enter any city and get conditions instantly.",
-      toolOne: "HTML ",
+      desc: " A React application that fetches real-time weather data from the OpenWeatherMap API, displaying current conditions and a 5-day forecast for any city in the world, with dynamic backgrounds that change based on the live weather condition..",
+      toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web",
-      goLive: "https://vercel.com/bguragain1023-webs-projects",
+      github: "https://github.com/bguragain1023-web/Weather-app",
+      goLive: "https://weather-app-pearl-two-35.vercel.app/",
     },
 
     {

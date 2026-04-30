@@ -19,7 +19,7 @@ export const Goup = () => {
     <>
       {scrollYPosition > 800 && (
         <a href="#hero">
-          <div className="goup flex-center">
+          <div className="goup d-flex justify-content-center align-items.center ">
             <i className="fa-solid fa-angle-up"></i>
           </div>
         </a>

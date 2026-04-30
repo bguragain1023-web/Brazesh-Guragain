@@ -53,7 +53,7 @@ export const Hero = () => {
             <div className="code-line">
               <span className="v-name">"role"</span>
               <span>:</span>
-              <span className="value">"Full-stack Developer"</span>,
+              <span className="value">"Frontend Developer"</span>,
               <br />
             </div>
             <div className="code-line">
