@@ -5,6 +5,7 @@ import prank from "../assets/prank.JPG";
 import port from "../assets/port.JPG";
 import weather from "../assets/weather.JPG";
 import movie from "../assets/movie.JPG";
+import cine from "../assets/cine.png";
 import { Title } from "./Title";
 import { Card } from "./Card";
 
@@ -76,6 +77,16 @@ export const Projects = () => {
       goLive:
         "https://movie-world-git-main-bguragain1023-webs-projects.vercel.app/",
     },
+    {
+      image: cine,
+      title: "CineTrail",
+      desc: "Movie World is a React-based movie discovery app powered by the TMDB API. Browse popular, trending, and genre-based movies, watch trailers in a modal overlay, and save your favourites to a persistent watchlist — all in one place, no login required.",
+      toolOne: "React ",
+      toolTwo: "CSS",
+      toolThree: "Javascript",
+      github: "https://github.com/bguragain1023-web/CineTrial",
+      goLive: "https://cine-trial-pn7d.vercel.app/",
+    }
   ];
   return (
     <section className="mt-5 pt-5" id="projects">
