@@ -80,7 +80,7 @@ export const Projects = () => {
     {
       image: cine,
       title: "CineTrail",
-      desc: "Movie World is a React-based movie discovery app powered by the TMDB API. Browse popular, trending, and genre-based movies, watch trailers in a modal overlay, and save your favourites to a persistent watchlist — all in one place, no login required.",
+      desc: "CineTrail is a React-based movie discovery app powered by the TMDB API. Browse popular, trending, and genre-based movies, watch trailers in a modal overlay, and save your favourites to a persistent watchlist — all in one place, no login required.",
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
