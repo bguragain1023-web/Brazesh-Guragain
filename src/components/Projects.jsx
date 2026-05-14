@@ -5,7 +5,7 @@ import prank from "../assets/prank.JPG";
 import port from "../assets/port.JPG";
 import weather from "../assets/weather.JPG";
 import movie from "../assets/movie.JPG";
-import cine from "../assets/cine.png";
+import cine from "../assets/Cine.png";
 import { Title } from "./Title";
 import { Card } from "./Card";
 
@@ -85,7 +85,7 @@ export const Projects = () => {
       toolTwo: "CSS",
       toolThree: "Javascript",
       github: "https://github.com/bguragain1023-web/CineTrial",
-      goLive: "https://cine-trial-pn7d.vercel.app/",
+      goLive: "https://cine-trial.vercel.app",
     }
   ];
   return (

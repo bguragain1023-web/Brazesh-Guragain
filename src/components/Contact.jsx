@@ -28,9 +28,7 @@ export const Contact = () => {
           <a href="mailto:b.guragain1023@gmail.com">
             <i className="fa-solid fa-envelope"></i>
           </a>
-          <a href="tel:+61422429512">
-            <i className="fa-solid fa-phone"></i>
-          </a>
+         
         </div>
       </div>
     </div>
