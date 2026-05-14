@@ -5,7 +5,7 @@ import prank from "../assets/prank.JPG";
 import port from "../assets/port.JPG";
 import weather from "../assets/weather.JPG";
 import movie from "../assets/movie.JPG";
-import cine from "../assets/Cine"
+import cine from "../assets/cine.png"
 import { Title } from "./Title";
 import { Card } from "./Card";
 
