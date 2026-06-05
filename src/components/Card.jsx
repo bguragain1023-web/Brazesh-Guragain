@@ -11,7 +11,32 @@ export const Card = ({
   goLive,
 }) => {
   return (
-    <div className="card rounded-4 h-100">
+    <>
+      <div class="project-card row ">
+        <div class="card-image">
+          <img src={image} alt={title} />
+        </div>
+        <div class="card-info ">
+          <span class="card-index">01</span>
+          <h3 class="card-title">{title}</h3>
+          <p class="card-desc">{desc}</p>
+          <div class="card-tags">
+            <span class="card-tag">{toolOne}</span>
+            <span class="card-tag">{toolTwo}</span>
+            <span class="card-tag">{toolThree}</span>
+          </div>
+          <div class="card-links">
+            <a href={goLive} class="card-link live">
+              Live Demo ↗
+            </a>
+            <a href={github} class="card-link github">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="card rounded-4 h-100">
       <img src={image} className="card-img-top" alt="..." />
       <div className="card-body card-edit d-flex flex-column">
         <h5 className="card-title">{title}</h5>
@@ -34,6 +59,7 @@ export const Card = ({
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+    </>
   );
 };

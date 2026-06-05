@@ -5,7 +5,7 @@ import prank from "../assets/prank.JPG";
 import port from "../assets/port.JPG";
 import weather from "../assets/weather.JPG";
 import movie from "../assets/movie.JPG";
-import cine from "../assets/cine.png"
+import cine from "../assets/cine.png";
 import { Title } from "./Title";
 import { Card } from "./Card";
 
@@ -24,6 +24,7 @@ export const Projects = () => {
 
     {
       image: contactList,
+      title: "Random User Generator",
       desc: " Dynamic contact directory using RandomUser API to generate realistic profiles with search & filter.",
       toolOne: "HTML ",
       toolTwo: "CSS",
@@ -86,21 +87,23 @@ export const Projects = () => {
       toolThree: "Javascript",
       github: "https://github.com/bguragain1023-web/CineTrial",
       goLive: "https://cine-trial.vercel.app",
-    }
+    },
   ];
   return (
-    <section className="mt-5 pt-5" id="projects">
-      <Title title="My projects" />
+    <>
+      <section className="mt-5 pt-5" id="projects">
+        <Title title="My projects" />
 
-      <div className=" container mt-5 p-5">
-        <div className="row row-cols-1 row-cols-md- row-cols-lg-3 g-4">
-          {projects.map((project, index) => (
-            <div className="col" key={index}>
-              <Card {...project} />
-            </div>
-          ))}
+        <div className=" container ">
+          <div className="container">
+            {projects.map((project, index) => (
+              <div className="col" key={index}>
+                <Card {...project} />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };

@@ -6,11 +6,7 @@ export const Navbar = () => {
   return (
     <nav>
       <div className=" navbar container d-flex ">
-        <div className="name d-flex ">
-          <div className="brazz p-2">Brazesh</div>
-          <div className="liness"></div>
-          <div className="nav-job-title">Frontend Developer</div>
-        </div>
+        <div className="brazz p-2">Brazesh</div>
         <input className="hide-box" type="checkbox" id="hamburger" />
         <label
           htmlFor="hamburger"
