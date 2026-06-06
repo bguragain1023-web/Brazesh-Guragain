@@ -8,8 +8,8 @@ export const Hero = () => {
       id="hero"
     >
       <div className="d-flex align-items-center justify-content-center gap-4 main-hero">
-        <div className="info  d-flex flex-column  border justify-content-center">
-          <div className=" greet">HI I'M </div>
+        <div className="info  d-flex flex-column  justify-content-center">
+          <div className="fira-code-namefont greet">Hi I'm </div>
           <div className="full-name">
             <span className="fira-code-namefont"> Brazesh </span>
             <span className="fira-code-namefont ">Guragain</span>

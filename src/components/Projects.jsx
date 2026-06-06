@@ -1,11 +1,11 @@
 import React from "react";
-import timeImage from "../assets/t-tracker.JPG";
+import timeImage from "../assets/timetracker.png";
 import contactList from "../assets/c-list.JPG";
-import prank from "../assets/prank.JPG";
-import port from "../assets/port.JPG";
+import aiprompt from "../assets/aiprompt.png";
+import port from "../assets/portfolio.png";
 import weather from "../assets/weather.JPG";
-import movie from "../assets/movie.JPG";
 import cine from "../assets/cine.png";
+
 import { Title } from "./Title";
 import { Card } from "./Card";
 
@@ -14,12 +14,13 @@ export const Projects = () => {
     {
       image: timeImage,
       title: "Time Tracker",
-      desc: "A time-tracking app that flips productivity on its head. Helping users identify and eliminate their worst time wasting habit",
+      desc: "A full stack time-tracking app built with React, Node.js, Express and MongoDB. Users add tasks and hours, move them between an entry list and a bad list, and identify where their time is actually going — with bulk selection, real-time updates and data persisted to the cloud.",
       toolOne: "React ",
-      toolTwo: "CSS",
-      toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web/Time-Tracker-React",
-      goLive: "https://time-tracker-react-liart.vercel.app",
+      toolTwo: "express",
+      toolThree: "node.js",
+      toolFour: "mongodb",
+      github: "https://github.com/bguragain1023-web/Time-Tracker-API",
+      goLive: "https://time-tracker-api-l6bn.onrender.com/",
     },
 
     {
@@ -29,20 +30,21 @@ export const Projects = () => {
       toolOne: "HTML ",
       toolTwo: "CSS",
       toolThree: "Javascript",
+      toolFour: "Random user API",
       github: "https://github.com/bguragain1023-web/Contact-list",
       goLive: "https://contact-list-seven.vercel.app/",
     },
 
     {
-      image: prank,
-      title: "Prank Calculator",
-      desc: " A fully working calculator with unexpected behaviour that catches users off-guard by adding random number 30% of the time .",
+      image: aiprompt,
+      title: "aiPromptDiff",
+      desc: " One prompt. Two AI models. Side-by-side comparison with metrics, key differences and session history. Built to understand how Claude and GPT respond differently to the same input.",
       toolOne: "React ",
       toolTwo: "CSS",
-      toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web/React-prank-calculator",
-      goLive:
-        "https://reactprankcalculatortest-axt0yuk00-bguragain1023-webs-projects.vercel.app",
+      toolThree: "openAI API",
+      toolFour: "claude API",
+      github: "https://github.com/bguragain1023-web/AI-Prompt-Diff",
+      goLive: "ai-prompt-diff.vercel.app",
     },
 
     {
@@ -52,6 +54,7 @@ export const Projects = () => {
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
+      toolFour: "OpenWeather API",
       github: "https://github.com/bguragain1023-web/Weather-app",
       goLive: "https://weather-app-pearl-two-35.vercel.app/",
     },
@@ -68,23 +71,13 @@ export const Projects = () => {
     },
 
     {
-      image: movie,
-      title: "Movie World",
-      desc: "A React movie discovery app powered by the OMDB API. Loads a random movie on launch, lets you search any title, and categorize movies as Drama or Action into a personal watchlist. Features dynamic poster backgrounds, category filtering, and local storage persistence so your list survives page refreshes.",
-      toolOne: "React ",
-      toolTwo: "CSS",
-      toolThree: "Javascript",
-      github: "https://github.com/bguragain1023-web/Movie-World",
-      goLive:
-        "https://movie-world-git-main-bguragain1023-webs-projects.vercel.app/",
-    },
-    {
       image: cine,
       title: "CineTrail",
       desc: "CineTrail is a React-based movie discovery app powered by the TMDB API. Browse popular, trending, and genre-based movies, watch trailers in a modal overlay, and save your favourites to a persistent watchlist — all in one place, no login required.",
       toolOne: "React ",
       toolTwo: "CSS",
       toolThree: "Javascript",
+      toolFour: "TMDB API",
       github: "https://github.com/bguragain1023-web/CineTrial",
       goLive: "https://cine-trial.vercel.app",
     },
@@ -92,9 +85,9 @@ export const Projects = () => {
   return (
     <>
       <section className="mt-5 pt-5" id="projects">
-        <Title title="My projects" />
+        <Title title="Featured projects" />
 
-        <div className=" container ">
+        <div className=" container mt-3">
           <div className="container">
             {projects.map((project, index) => (
               <div className="col" key={index}>

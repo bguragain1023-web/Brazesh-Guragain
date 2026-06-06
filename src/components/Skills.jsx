@@ -4,8 +4,8 @@ import { Title } from "./Title";
 export const Skills = () => {
   return (
     <>
-      <div className="title">SKILLS</div>
-      <div className="skill-wrapper d-flex mt-3 align-items-center">
+      <div className="title mt-5">SKILLS</div>
+      <div className="skill-wrapper d-flex mt-2 align-items-center">
         <div className="skill-section p-3  ">
           <div>
             <div className="skill-box gap-2  align-items-center  ">

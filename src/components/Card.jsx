@@ -9,6 +9,7 @@ export const Card = ({
   toolThree,
   github,
   goLive,
+  toolFour,
 }) => {
   return (
     <>
@@ -24,12 +25,13 @@ export const Card = ({
             <span class="card-tag">{toolOne}</span>
             <span class="card-tag">{toolTwo}</span>
             <span class="card-tag">{toolThree}</span>
+            <span class="card-tag">{toolFour}</span>
           </div>
           <div class="card-links">
-            <a href={goLive} class="card-link live">
+            <a href={goLive} target="_blank" class="card-link live">
               Live Demo ↗
             </a>
-            <a href={github} class="card-link github">
+            <a href={github} target="_blank" class="card-link github">
               GitHub
             </a>
           </div>

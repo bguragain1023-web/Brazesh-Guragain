@@ -14,11 +14,12 @@ export const About = () => {
           </span>
 
           <p>
-            Hey — I'm Brazesh. I build fast, functional web apps using React,
-            JavaScript, and CSS — with Node.js, MongoDB and AI integration in
-            progress. I've shipped 5+ projects including API-driven apps,
-            interactive React tools, and a fully responsive portfolio — and I'm
-            not stopping there.
+            Hey — I'm Brazesh. I build fast, functional web apps from frontend
+            to backend — using React, JavaScript, Node.js, MongoDB and AI
+            integration. I've shipped 7+ projects including API-driven apps,
+            interactive React tools, and a fully responsive portfolio — and
+            currently deep diving into AI to build products that are actually
+            intelligent.
           </p>
           <p>
             I hold a Master of Technology in Software Engineering from
