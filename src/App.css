@@ -50,15 +50,19 @@ a {
 nav {
   box-shadow: var(--shadow);
   padding: 1rem 0;
+  position :sticky;
   top: 0px;
   color: var(--text-color);
-  z-index: 1001;
+  z-index: 9999;
   background: var(--bg-light);
+   backdrop-filter: blur(20px);
+  
 }
-nav .navbar {
+.navbar {
   justify-content: space-between;
   align-items: center;
   padding: 0.5 0;
+  
 }
 
 .brazz {
@@ -670,13 +674,15 @@ footer {
 
   .menu {
     position: fixed;
-    background: var(--color-dark);
+    background: rgb(18, 18, 18);
     width: 250px;
     height: 100vh;
     top: 5rem;
     left: 100vw;
     box-shadow: var(--shadow);
     transition: all 0.5s;
+    z-index: 9999;
+     
   }
   .navigation {
     flex-direction: column;
@@ -693,6 +699,7 @@ footer {
   } */
   .slide {
     left: calc(100vw - 250px);
+     backdrop-filter: blur(10px);
   }
   /* Hero  */
 
