@@ -9,10 +9,6 @@ export const About = () => {
 
       <div className="bio d-flex flex-column-reverse flex-md-row container gap-3">
         <div className="left-side text-white pt-5">
-          <span className="about-name fira-code-namefont">
-            Brazesh Guragain
-          </span>
-
           <p>
             Hey — I'm Brazesh. I build fast, functional web apps from frontend
             to backend — using React, JavaScript, Node.js, MongoDB and AI

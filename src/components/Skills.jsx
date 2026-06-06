@@ -4,8 +4,10 @@ import { Title } from "./Title";
 export const Skills = () => {
   return (
     <>
-      <div className="title mt-5">SKILLS</div>
-      <div className="skill-wrapper d-flex mt-2 align-items-center" id="skills">
+      <div className="title mt-5" id="skills">
+        SKILLS
+      </div>
+      <div className="skill-wrapper d-flex mt-2 align-items-center">
         <div className="skill-section p-3  ">
           <div>
             <div className="skill-box gap-2  align-items-center  ">
@@ -139,8 +141,8 @@ export const Skills = () => {
               <span className="text-danger">{"}"}</span>
 
               <div>
-                <span className="text-primary">$ </span>{" "}
-                <span className="text-danger">node brazesh.js</span>
+                <span className="text-white">$ </span>{" "}
+                <span className="text-white">node brazesh.js</span>
                 <span className="t-cursor"> </span>
               </div>
             </div>

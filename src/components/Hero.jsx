@@ -25,7 +25,7 @@ export const Hero = () => {
 
           <div className="btn-section">
             <a href="#contact">Get In Touch </a>
-            <a href="/brazesh_resume.pdf" download>
+            <a href="/brazesh_resume_v2.pdf" download>
               <i className="fa-solid fa-download"></i>
               Download Resume
             </a>

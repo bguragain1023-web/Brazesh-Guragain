@@ -1,6 +1,6 @@
 :root {
   --bg-light:rgba(1, 1, 9, 0.865);
- 
+
   --color-secondary: #f5f5f5a9;
   --text-color: #f5f5f5a9;
   --name-color: #bbad62c2;
@@ -34,9 +34,9 @@ a {
 .title {
   color: var(--name-color);
   text-align: center;
-  font-weight: bolder;
+
   font-size: 3rem;
-  text-decoration: underline var(--name-color);
+  text-decoration: underline var(--text-color);
   text-underline-offset: 10px;
 }
 
@@ -50,7 +50,6 @@ a {
 nav {
   box-shadow: var(--shadow);
   padding: 1rem 0;
-  position: sticky;
   top: 0px;
   color: var(--text-color);
   z-index: 1001;
@@ -102,7 +101,7 @@ nav .navbar {
 }
 
 .greet{
-  font-size: 4rem;
+  font-size: 3rem;
    line-height: 1.2;
   color: var(--name-color);
 }
@@ -221,7 +220,7 @@ top:-60px;
 }
 
 
-/* right side terminal */
+
 
 /* BANNER */
 
@@ -291,13 +290,6 @@ top:-60px;
   
 }
 
-/* 
-@keyframes float {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-1px) scale(1.05 )}
-} */
-
-
 
 
 .skill-items{
@@ -305,7 +297,7 @@ top:-60px;
   flex:1;
   border-radius: 15px;
   color: var(--text-color);
-  /* animation: float 3s ease-in-out infinite; */
+
 }
 .skill-item{
   font-size:1.1rem;
@@ -392,17 +384,17 @@ top:-60px;
   gap: 2rem;
 }
 .v-name {
-  color: blue;
+  color: skyblue;
 }
 
 .value {
-  color: red;
+  color: rgb(158, 80, 6);
 }
 .t-cursor {
   display: inline-block;
   width: 9px;
   height: 16px;
-  background: blue;
+  background: white;
   vertical-align: middle;
   animation: blink 1s infinite;
   margin-left: 10px;
@@ -600,23 +592,14 @@ top:-60px;
   font-size: 1.5rem;
   color: var(--text-color);
 }
-.emailcontact {
-  padding: 1rem;
-  margin-top: 2rem;
-  background: var(--text-color);
-  border-radius: 50px;
-  color: white;
+.contact a{
+  transition: all .5s ease-in-out;
 }
-.emailcontact span {
-  font-size: 1.5rem;
-  color: var(--color-dark);
+
+.contact a:hover{
+  transform: scale(1.2);
 }
-.email-logo {
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--color-orange);
-  border-radius: 50%;
-}
+
 footer {
   color: var(--text-color);
   border-top: 1px solid var(--color-secondary);

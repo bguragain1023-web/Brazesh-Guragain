@@ -10,6 +10,7 @@ export const Card = ({
   github,
   goLive,
   toolFour,
+  index,
 }) => {
   return (
     <>
@@ -18,14 +19,14 @@ export const Card = ({
           <img src={image} alt={title} />
         </div>
         <div class="card-info ">
-          <span class="card-index">01</span>
+          <span class="card-index">{String(index + 1).padStart(2, "0")}</span>
           <h3 class="card-title">{title}</h3>
           <p class="card-desc">{desc}</p>
           <div class="card-tags">
             <span class="card-tag">{toolOne}</span>
             <span class="card-tag">{toolTwo}</span>
             <span class="card-tag">{toolThree}</span>
-            <span class="card-tag">{toolFour}</span>
+            {toolFour && <span className="card-tag">{toolFour}</span>}
           </div>
           <div class="card-links">
             <a href={goLive} target="_blank" class="card-link live">

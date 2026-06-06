@@ -24,6 +24,18 @@ export const Projects = () => {
     },
 
     {
+      image: aiprompt,
+      title: "aiPromptDiff",
+      desc: " One prompt. Two AI models. Side-by-side comparison with metrics, key differences and session history. Built to understand how Claude and GPT respond differently to the same input.",
+      toolOne: "React ",
+      toolTwo: "CSS",
+      toolThree: "openAI API",
+      toolFour: "claude API",
+      github: "https://github.com/bguragain1023-web/AI-Prompt-Diff",
+      goLive: "https://ai-prompt-diff.vercel.app/",
+    },
+
+    {
       image: contactList,
       title: "Random User Generator",
       desc: " Dynamic contact directory using RandomUser API to generate realistic profiles with search & filter.",
@@ -33,18 +45,6 @@ export const Projects = () => {
       toolFour: "Random user API",
       github: "https://github.com/bguragain1023-web/Contact-list",
       goLive: "https://contact-list-seven.vercel.app/",
-    },
-
-    {
-      image: aiprompt,
-      title: "aiPromptDiff",
-      desc: " One prompt. Two AI models. Side-by-side comparison with metrics, key differences and session history. Built to understand how Claude and GPT respond differently to the same input.",
-      toolOne: "React ",
-      toolTwo: "CSS",
-      toolThree: "openAI API",
-      toolFour: "claude API",
-      github: "https://github.com/bguragain1023-web/AI-Prompt-Diff",
-      goLive: "ai-prompt-diff.vercel.app",
     },
 
     {
@@ -91,7 +91,7 @@ export const Projects = () => {
           <div className="container">
             {projects.map((project, index) => (
               <div className="col" key={index}>
-                <Card {...project} />
+                <Card key={index} {...project} index={index} />
               </div>
             ))}
           </div>
