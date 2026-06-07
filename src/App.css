@@ -6,6 +6,7 @@
   --name-color: #bbad62c2;
   --shadow: 4px -2px 20px 9px rgba(128, 128, 128, 0.165);
 }
+
 .fira-code-namefont {
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
@@ -16,15 +17,21 @@
 
 html {
   scroll-behavior: smooth;
+   
+     
 }
 
 * {
   box-sizing: border-box;
 }
 
+
+
+
 body {
   margin: 0;
   overflow-x: hidden;
+    max-width: 100%;
 }
 
 a {
@@ -694,9 +701,7 @@ footer {
     padding-left: 2rem;
   }
 
-  /* #hamburger:checked ~ .menu {
-    left: calc(100vw - 250px);
-  } */
+  
   .slide {
     left: calc(100vw - 250px);
      backdrop-filter: blur(10px);

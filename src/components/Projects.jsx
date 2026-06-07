@@ -25,7 +25,7 @@ export const Projects = () => {
 
     {
       image: aiprompt,
-      title: "aiPromptDiff",
+      title: "AI Prompt Diff",
       desc: " One prompt. Two AI models. Side-by-side comparison with metrics, key differences and session history. Built to understand how Claude and GPT respond differently to the same input.",
       toolOne: "React ",
       toolTwo: "CSS",
