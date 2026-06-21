@@ -42,7 +42,7 @@ export const About = () => {
             </span>
             <span className="hobbies-icon">
               <i className="fa-solid fa-futbol "></i>
-              Soccer
+              Football
             </span>
             <span className="hobbies-icon">
               <i className="fa-solid fa-person-swimming "></i>

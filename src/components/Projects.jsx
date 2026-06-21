@@ -5,12 +5,25 @@ import aiprompt from "../assets/aiprompt.png";
 import port from "../assets/portfolio.png";
 import weather from "../assets/weather.JPG";
 import cine from "../assets/cine.png";
+import aussie from "../assets/Aussie.png";
 
 import { Title } from "./Title";
 import { Card } from "./Card";
 
 export const Projects = () => {
   const projects = [
+    {
+      image: aussie,
+      title: "AussIe In Worldcup2026",
+      desc: "An AI-powered RAG (Retrieval-Augmented Generation) chatbot about the Australian Socceroos at the 2026 FIFA World Cup. Ask anything about the squad, fixtures, history, tactics, and opponents — and get accurate, context-aware answers powered by real data.",
+      toolOne: "React ",
+      toolTwo: "Node.js",
+      toolThree: "Claude API, OpenAI API",
+      toolFour: "mongodb, lanceDB",
+      github: "https://github.com/bguragain1023-web/aussie-in-worldcup",
+      goLive: "https://aussie-in-worldcup.vercel.app/",
+    },
+
     {
       image: timeImage,
       title: "Time Tracker",
