@@ -16,10 +16,10 @@ export const Hero = () => {
           </div>
           <span className="job-title typing ">Full Stack Developer</span>
           <p className="desc">
-            I build fast, functional web apps from frontend to backend — with 7+
-            projects already shipped including AI integration, real-time data
-            apps, and React tools. Full stack capable with Node.js, MongoDB, and
-            REST APIs — now pushing deeper into AI, turning caffeine and
+            I build fast, high-performance web applications end-to-end—with 10+
+            projects shipped including AI integration, real-time data apps, and
+            custom React tools. Full-stack ready with Node.js, Express, MongoDB,
+            and REST APIs—now pushing deeper into AI, turning caffeine and
             curiosity into products that are actually intelligent.
           </p>
 

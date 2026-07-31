@@ -12,7 +12,7 @@ export const About = () => {
           <p>
             Hey — I'm Brazesh. I build fast, functional web apps from frontend
             to backend — using React, JavaScript, Node.js, MongoDB and AI
-            integration. I've shipped 7+ projects including API-driven apps,
+            integration. I've shipped 10+ projects including API-driven apps,
             interactive React tools, and a fully responsive portfolio — and
             currently deep diving into AI to build products that are actually
             intelligent.
@@ -25,16 +25,16 @@ export const About = () => {
 
           <p>
             Before going all-in on dev, I spent 3+ years in support work and
-            retail — which taught me how to communicate clearly, stay calm under
-            pressure, and actually care about people. Skills that matter just as
-            much in a dev team.
+            retail — which developed my skills in cross-team communicate,
+            staying calm under pressure, and building with true user empathy.
+            These are skills I bring into every engineering team.
           </p>
           <p>Based in Hobart, Tasmania — open to new opportunities.</p>
 
           <div className="hobbies d-flex flex-wrap gap-4">
             <span className="hobbies-icon">
               <i className="fa-solid fa-code "></i>
-              code
+              coding
             </span>
             <span className="hobbies-icon">
               <i className="fa-solid fa-microchip "></i>
@@ -53,7 +53,7 @@ export const About = () => {
 
         <div className="right-side d-flex justify-content-center align-items-center text-center ">
           <div className="image-box">
-            <img src={myPic} alt="" />
+            <img src={myPic} alt="Brazesh" />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export const Banner = () => {
       <div className="banner  p-4 ">
         <div className="banner-boxes d-flex justify-content-between  ">
           <div className="banner-box d-flex justify-content-center align-items-center flex-column">
-            <span className="banner-top">7+ </span>
+            <span className="banner-top">10+ </span>
             <span className="banner-mid">Projects Built</span>
             <span className="banner-last">& Counting</span>
           </div>

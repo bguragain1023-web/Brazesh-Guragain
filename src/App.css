@@ -292,60 +292,78 @@ top:-60px;
 /* Skills section */
 
 
-.skill-title{
-  font-size:2rem;
-  font-style: italic;
-  padding:10px;
-    display: inline-block;
-  color:var(--name-color)
-  
+
+.skill-box {
+  margin-bottom: 20px;
 }
 
-
-
-.skill-items{
-  padding:20px 10px;
-  flex:1;
-  border-radius: 15px;
-  color: var(--text-color);
-
-}
-.skill-item{
-  font-size:1.1rem;
-  border:1px solid var(--text-color);
-  border-radius:15px;
-  padding:10px;
-  letter-spacing: 4px;
-
-  animation: scaleup 7s infinite;
+.skill-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--name-color);
+  margin-bottom: 12px;
 }
 
-.skill-item:nth-child(1) { animation-delay: 0s; }
-.skill-item:nth-child(2) { animation-delay: 1s; }
-.skill-item:nth-child(3) { animation-delay: 2s; }
-.skill-item:nth-child(4) { animation-delay: 3s; }
-.skill-item:nth-child(5) { animation-delay: 4s; }
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
 
-@keyframes scaleup {
-  0%, 100% {
-    transform: scale(1);
-    background: transparent;
-    box-shadow: none;
+.skill-item {
+  position: relative;
+  overflow: hidden;
+  color:var(--text-color);
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.3s ease;
+  padding: 8px 16px;
+ 
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35), /* Bright shimmer beam */
+    transparent
+  );
+  animation: sweep 5s infinite;
+}
+
+.skill-item:nth-child(1)::before { animation-delay: 0s; }
+.skill-item:nth-child(2)::before { animation-delay: 0.8s; }
+.skill-item:nth-child(3)::before { animation-delay: 1.6s; }
+.skill-item:nth-child(4)::before { animation-delay: 2.4s; }
+.skill-item:nth-child(5)::before { animation-delay: 3.2s; }
+
+@keyframes sweep {
+  0% {
+    left: -100%;
   }
-
-  10% {
-    transform: scale(1.1);
-    background: grey;
-    box-shadow: 0 0 20px rgba(255,255,255,.3);
-  }
-
   20% {
-    transform: scale(1);
+    left: 100%;
+  }
+  100% {
+    left: 100%;
   }
 }
-
-
-
+.skill-item:hover {
+  border-color: var(--name-color);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
 
 
 /* Skills right side terminal */
