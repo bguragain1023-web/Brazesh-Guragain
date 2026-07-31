@@ -6,6 +6,7 @@ import port from "../assets/portfolio.png";
 import weather from "../assets/weather.JPG";
 import cine from "../assets/cine.png";
 import aussie from "../assets/Aussie.png";
+import capitalView from "../assets/dashboard.png";
 
 import { Title } from "./Title";
 import { Card } from "./Card";
@@ -22,6 +23,17 @@ export const Projects = () => {
       toolFour: "mongodb, lanceDB",
       github: "https://github.com/bguragain1023-web/aussie-in-worldcup",
       goLive: "https://aussie-in-worldcup.vercel.app/",
+    },
+    {
+      image: capitalView,
+      title: "Capital View — Full-Stack Personal Finance Tracker",
+      desc: " A full-stack personal finance tracker where users can log in, add and manage transactions, and visualize income, expenses, and balance through interactive charts — with an upcoming AI feature that forecasts future balance based on spending trends ",
+      toolOne: "React ",
+      toolTwo: "Node.js",
+      toolThree: "Express",
+      toolFour: "mongodb",
+      github: "https://github.com/bguragain1023-web/CapitalView-Backend",
+      goLive: "https://capital-view-frontend.vercel.app",
     },
 
     {
