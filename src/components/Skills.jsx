@@ -25,6 +25,11 @@ export const Skills = () => {
                   JavaScript
                 </span>
                 <span className="skill-item">
+                  <i className="fa-brands fa-typescript text-primary"></i>
+                  TypeScript
+                </span>
+
+                <span className="skill-item">
                   <i className="fa-brands fa-react text-info"></i> React
                 </span>
                 <span className="skill-item">
@@ -139,7 +144,7 @@ export const Skills = () => {
               <div className="code-line">
                 <span className="v-name">"location"</span>
                 <span>:</span>
-                <span className="value">"Hobart, Tasmania"</span>,
+                <span className="value">"Brisbane, Queensland"</span>,
                 <br />
               </div>
               <div className="code-line">
@@ -152,7 +157,7 @@ export const Skills = () => {
                 <span className="v-name">"frontendSkills"</span>
                 <span>:</span>
                 <span className="value">
-                  ["HTML" , "CSS", "javaScript", "React"]
+                  ["HTML" , "CSS", "JavaScript", "React", " TypeScript"]
                 </span>
                 ,
                 <br />
