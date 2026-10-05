@@ -29,7 +29,7 @@ export const About = () => {
             staying calm under pressure, and building with true user empathy.
             These are skills I bring into every engineering team.
           </p>
-          <p>Based in Hobart, Tasmania — open to new opportunities.</p>
+          <p>Based in Brisbane, Queensland — open to new opportunities.</p>
 
           <div className="hobbies d-flex flex-wrap gap-4">
             <span className="hobbies-icon">

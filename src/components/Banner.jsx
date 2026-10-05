@@ -12,7 +12,7 @@ export const Banner = () => {
           </div>
 
           <div className="banner-box d-flex justify-content-center align-items-center flex-column">
-            <span className="banner-top">2 </span>
+            <span className="banner-top">3 </span>
             <span className="banner-mid">AI Integration</span>
             <span className="banner-last">Open AI and Anthropic</span>
           </div>
